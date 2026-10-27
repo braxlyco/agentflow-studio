@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0c1020" />
+  <meta name="description" content="Explore how a human-reviewed automation routes leads, support requests, and invoices." />
+  <title>AgentFlow Studio — Braxly</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="https://github.com/braxlyco" aria-label="Braxly on GitHub"><span class="brand-mark">B<span>.</span></span><span>BRAXLY<small>LABS / 001</small></span></a>
+      <div class="side-label">PLAYGROUND</div>
+      <nav class="workflow-nav" id="workflow-nav" aria-label="Choose a workflow"></nav>
+      <div class="side-note"><span class="live-dot"></span> Interactive demo<br /><small>Runs in your browser. No data is sent.</small></div>
+      <a class="side-link" href="https://github.com/braxlyco/agentflow-studio" target="_blank" rel="noopener noreferrer">View source <span>↗</span></a>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><span class="breadcrumb">Braxly <span>/</span> AgentFlow Studio</span><a href="mailto:contactbraxly@gmail.com?subject=Automation%20project%20enquiry">Build this for my team <span>↗</span></a></header>
+      <div class="content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> HUMAN-CENTERED AUTOMATION</div>
+        <section class="hero">
+          <div><h1>See the decision.<br /><em>Trust the process.</em></h1><p>Explore three workflows from intake to handoff. Change the case details, run the rules, and inspect every decision along the way.</p></div>
+          <div class="hero-graphic" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="center-node">B<span>.</span></div><span class="satellite s1">01</span><span class="satellite s2">02</span><span class="satellite s3">03</span></div>
+        </section>
+        <div class="disclaimer"><span class="disclaimer-icon">i</span><span><strong>Transparent demo mode.</strong> This uses explicit, editable case inputs and deterministic rules. It does not call an AI model or external API.</span></div>
+
+        <section class="workspace" aria-label="Workflow simulation">
+          <div class="workspace-head"><div><span class="section-kicker">01 / CONFIGURE</span><h2 id="workflow-title">Lead qualification</h2><p id="workflow-description"></p></div><span class="case-badge">CASE BUILDER</span></div>
+          <div class="workspace-grid">
+            <form id="case-form" class="case-form"><div id="fields" class="fields"></div><button class="primary-button" id="run-button" type="submit"><span class="button-icon">▶</span> Run workflow <span class="button-arrow">→</span></button></form>
+            <div class="result-panel" id="result-panel" aria-live="polite"><div class="empty-state"><div class="empty-icon">◇</div><h3>Ready when you are.</h3><p>Adjust the sample case and run the workflow to see its decision trace.</p></div></div>
+          </div>
+        </section>
+
+        <footer><div><strong>BRAXLY</strong><span>Useful systems, built around real work.</span></div><a href="mailto:contactbraxly@gmail.com?subject=Automation%20project%20enquiry">Talk about your workflow ↗</a></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
